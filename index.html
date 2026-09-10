@@ -221,8 +221,10 @@
   .comment-del{align-self:flex-start; background:none; border:none; color:var(--ink-soft); cursor:pointer; font-size:.76rem; text-decoration:underline;}
   .empty{color:var(--ink-soft); font-size:.92rem; padding:14px 0; font-weight:600;}
 
-  footer{margin-top:56px; padding-top:18px; border-top:3px dashed var(--mustard); color:var(--ink-soft); font-size:.82rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-weight:600;}
+  footer{margin-top:56px; padding-top:18px; border-top:3px dashed var(--mustard); color:var(--ink-soft); font-size:.82rem; font-weight:600;}
+  .footer-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
   footer button{background:none;border:none;color:var(--ink-soft);text-decoration:underline;cursor:pointer;font-size:.82rem;padding:0;}
+  .footer-signature{margin-top:10px; text-align:center; font-size:.8rem; color:var(--ink-soft); opacity:.8;}
 
   /* ---------- PIN modal ---------- */
   .overlay{
@@ -327,7 +329,7 @@
 
   <section class="block">
     <div class="block-head">
-      <h2>Kommentare</h2>
+      <h2>Elternforum & Fragen</h2>
     </div>
     <div class="comment-form">
       <input type="text" class="author" id="commentAuthor" placeholder="Dein Name">
@@ -338,8 +340,11 @@
   </section>
 
   <footer>
-    <span id="statusLine">Wird geladen…</span>
-    <button type="button" id="resetBtn">Daten zurücksetzen</button>
+    <div class="footer-row">
+      <span id="statusLine">Wird geladen…</span>
+      <button type="button" id="resetBtn">Daten zurücksetzen</button>
+    </div>
+    <div class="footer-signature">Mit ❤️ gepflegt vom Kassenwart · Alle Angaben ohne Gewähr</div>
   </footer>
 </div>
 
